@@ -22,6 +22,7 @@ RUN apk add --no-cache \
     php7-pdo_mysql \
     php7-pdo_pgsql \
     php7-posix \
+    php7-session \
     php7-xml
 
 # Fix Pid file error
