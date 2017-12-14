@@ -1,7 +1,7 @@
 # Based on Alpine Linux
 FROM alpine:3.7
 
-LABEL descrition="Tiny Tiny RSS + httpd + mod_php" \
+LABEL description="Tiny Tiny RSS + httpd + mod_php" \
       maintainer="Paul Trunk <mail@p7k.org>"
 
 ENV DB_HOST db
