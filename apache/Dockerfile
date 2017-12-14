@@ -4,21 +4,17 @@ FROM alpine:3.7
 LABEL description="Tiny Tiny RSS + httpd + mod_php" \
       maintainer="Paul Trunk <mail@p7k.org>"
 
-ENV DB_HOST db
-ENV DB_PORT 5432
-ENV DB_USER ttrss
-ENV DB_PASSWORD xxx
-ENV DB_NAME ttrss
-ENV DB_TYPE pgsql
-
 # Install necessary packages
 RUN apk add --no-cache \
     git \
     php7-apache2 \
     php7-curl \
+    php7-dom \
     php7-fileinfo \
     php7-gd \
+    php7-iconv \
     php7-json \
+    php7-mbstring \
     php7-mysqli \
     php7-mysqlnd \
     php7-pgsql \
