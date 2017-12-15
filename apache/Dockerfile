@@ -7,6 +7,7 @@ LABEL description="Tiny Tiny RSS + httpd + mod_php" \
 # Install necessary packages
 RUN apk add --no-cache \
     git \
+    php7 \
     php7-apache2 \
     php7-curl \
     php7-dom \
